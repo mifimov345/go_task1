@@ -108,9 +108,9 @@ func evaluateAndPrint(vals []float64) {
 			if freeBytesPerSec < 0 {
 				freeBytesPerSec = 0
 			}
-			freeBitsPerSec := freeBytesPerSec * 8
-			freeMbitPerSec := int(freeBitsPerSec / (1024.0 * 1024.0))
+			freeMbitPerSec := int(freeBytesPerSec / 1_000_000.0)
 			fmt.Printf("Network bandwidth usage high: %d Mbit/s available\n", freeMbitPerSec)
 		}
 	}
+
 }
