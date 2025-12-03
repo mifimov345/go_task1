@@ -68,6 +68,7 @@ func fetchAndProcessOnce() bool {
 		values[i] = num
 	}
 	evaluateAndPrint(values)
+
 	return true
 }
 
